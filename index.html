@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css"/>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-classic.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<nav class="navbar">
@@ -31,7 +32,7 @@
 		<h2 class="t1"><br/><br/><br/>  Hi, I'am Gurdarshan</h2>
 
 		<p class="t2"><b><br/><br/><br/>-Web Designer</b><br/><br/>Recently completed diploma with Web<br/>Designing and Programming, Producing<br/>quality work in the field.<br/><button class="btn" ><a data-fancybox data-src="#hidden-contentA" href="#"><b>Contact Me</b></a></button></p>
-		<img src="mypic.jpg">
+			<div data-aos="fade-left"><img src="mypic.jpg"></div>
 		<div style="display:none;" id="hidden-contentA" class="fancybox-content">
 		<p><img src="phone.png" width="25"><b><i>Call Me</i></b><br/>514-536-3787</p><br/><br/>
     	<p><img src="email.png" width="25"><b><i>Email</i></b><br/>gurdarshan25011@gmail.com</p><br/><br/>
@@ -44,7 +45,7 @@
 <section class="about" id="about">
 	<h2 class="aboutpage">About Me</h2>
 	<h4><br/>-My Introduction</h4>
-	<div class="contentA">
+	<div class="contentA" data-aos="fade-right">
 		<img src="myimg.jpg">
 		<div class="contentB">
 			<p><b>8+</b><br/><b>Ecommerce<br/>websites</b></p>
@@ -214,6 +215,30 @@
     });
     
     </script> 
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+  AOS.init({
+    disable: false,
+    startEvent: 'DOMContentLoaded',
+    initClassName: 'aos-animate',
+    useClassNames: false,
+    disableMutationObserver: false,
+    debounceDelay: 50,
+    throttleDelay: 99,
+
+
+
+    offset: 120,
+    delay: 0,
+    duration: 400,
+    easing: 'ease',
+    once: false,
+    mirror: true,
+    anchorPlacement: 'top-bottom',
+
+  });
+</script>
    
     <script src="scriptpof.js"></script>
 </body>
